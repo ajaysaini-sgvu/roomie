@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "949285894665",
+    "firebase_url": "https://dazzling-fire-5515.firebaseio.com",
+    "project_id": "dazzling-fire-5515",
+    "storage_bucket": "dazzling-fire-5515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949285894665:android:f9a6d4a99f3e92f9",
+        "android_client_info": {
+          "package_name": "com.github.jobs.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949285894665-pcn475mbed4eek1r1rgmiifmujvc6l8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9RIMroAZe4Cac9kFeWhtLY9ObqMtOFs8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949285894665:android:6b6c36c036ae1560",
+        "android_client_info": {
+          "package_name": "com.nagarro.scheduled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949285894665-4a6qe04urn8obh5i6b8jgs7okmfvk1lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nagarro.scheduled",
+            "certificate_hash": "2b024e7413de30efec52c97117fda40ae80bac5d"
+          }
+        },
+        {
+          "client_id": "949285894665-pcn475mbed4eek1r1rgmiifmujvc6l8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9RIMroAZe4Cac9kFeWhtLY9ObqMtOFs8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949285894665-mftbenapeu8ro9tkn8th8313bba3cbcf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949285894665-gfrv94cgfu9b0lkt2ielhljd62easmc4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.barber.barbershop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949285894665:android:66e6e9f63ef94ca1",
+        "android_client_info": {
+          "package_name": "com.roomie.roomie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949285894665-pcn475mbed4eek1r1rgmiifmujvc6l8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9RIMroAZe4Cac9kFeWhtLY9ObqMtOFs8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949285894665:android:6fb271cd5ad33c6c",
+        "android_client_info": {
+          "package_name": "com.tele.android.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949285894665-pcn475mbed4eek1r1rgmiifmujvc6l8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9RIMroAZe4Cac9kFeWhtLY9ObqMtOFs8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
