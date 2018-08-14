@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:roomie/auth/Auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:roomie/screens/forgotpassword/index.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
-  LoginScreenState createState() => new LoginScreenState();
+  _LoginScreenState createState() => new _LoginScreenState();
 }
 
-class LoginScreenState extends State<LoginScreen>
+class _LoginScreenState extends State<LoginScreen>
     with TickerProviderStateMixin {
   double scrollPercent = 0.0;
   Offset startDrag;
@@ -105,6 +108,11 @@ class LoginScreenState extends State<LoginScreen>
       setState(() {});
     });
   }
+
+  var authHandler = new Auth();
+
+  var emailController = new TextEditingController();
+  var passwordController = new TextEditingController();
 
   Widget HomePage() {
     return new Scaffold(body: Container(
@@ -286,11 +294,10 @@ class LoginScreenState extends State<LoginScreen>
               children: <Widget>[
                 new Expanded(
                   child: TextField(
-                    obscureText: true,
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'samarthagarwal@live.com',
+                      hintText: 'PLEASE ENTER YOUR EMAIL',
                       hintStyle: TextStyle(color: Colors.grey),
                     ),
                   ),
@@ -367,7 +374,7 @@ class LoginScreenState extends State<LoginScreen>
                     ),
                     textAlign: TextAlign.end,
                   ),
-                  onPressed: () => {},
+                  onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => new ForgotPasswordScreen())),
                 ),
               ),
             ],
@@ -475,11 +482,11 @@ class LoginScreenState extends State<LoginScreen>
               children: <Widget>[
                 new Expanded(
                   child: TextField(
-                    obscureText: true,
+                    controller: emailController,
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'samarthagarwal@live.com',
+                      hintText: 'PLEASE ENTER YOUR EMAIL',
                       hintStyle: TextStyle(color: Colors.grey),
                     ),
                   ),
@@ -526,6 +533,7 @@ class LoginScreenState extends State<LoginScreen>
               children: <Widget>[
                 new Expanded(
                   child: TextField(
+                    controller: passwordController,
                     obscureText: true,
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
@@ -607,7 +615,8 @@ class LoginScreenState extends State<LoginScreen>
                     ),
                     textAlign: TextAlign.end,
                   ),
-                  onPressed: () => {},
+                  onPressed: () => gotoLogin()
+                  ,
                 ),
               ),
             ],
@@ -624,7 +633,10 @@ class LoginScreenState extends State<LoginScreen>
                       borderRadius: new BorderRadius.circular(30.0),
                     ),
                     color: Colors.redAccent,
-                    onPressed: () => {},
+                    onPressed: () => authHandler.handleSignUp(emailController.text, passwordController.text)
+                        .then((FirebaseUser user) {
+                      // send user to dashboard screen
+                    }).catchError((e) => print(e)),
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
                         vertical: 20.0,
@@ -690,4 +702,5 @@ class LoginScreenState extends State<LoginScreen>
       ),
     );
   }
+
 }

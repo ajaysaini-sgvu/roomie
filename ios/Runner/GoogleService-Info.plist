@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>949285894665-neu6sqibulhnb6d205547jnc56q6u9md.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.949285894665-neu6sqibulhnb6d205547jnc56q6u9md</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7KiuwHVKZ39-4iL-bTviLOG48FGrYGjI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>949285894665</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.roomie.roomie</string>
+	<key>PROJECT_ID</key>
+	<string>dazzling-fire-5515</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dazzling-fire-5515.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:949285894665:ios:66e6e9f63ef94ca1</string>
+	<key>DATABASE_URL</key>
+	<string>https://dazzling-fire-5515.firebaseio.com</string>
+</dict>
+</plist>
