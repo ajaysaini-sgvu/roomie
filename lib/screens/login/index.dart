@@ -115,7 +115,8 @@ class _LoginScreenState extends State<LoginScreen>
   var passwordController = new TextEditingController();
 
   Widget HomePage() {
-    return new Scaffold(body: Container(
+    return new Scaffold(
+        body: Container(
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
         color: Colors.redAccent,
@@ -146,10 +147,9 @@ class _LoginScreenState extends State<LoginScreen>
                 Text(
                   "ROOMIE",
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                    decoration: TextDecoration.none
-                  ),
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      decoration: TextDecoration.none),
                 )
               ],
             ),
@@ -235,7 +235,8 @@ class _LoginScreenState extends State<LoginScreen>
   }
 
   Widget LoginPage() {
-    return new Scaffold(body: Container(
+    return new Scaffold(
+        body: Container(
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -294,6 +295,7 @@ class _LoginScreenState extends State<LoginScreen>
               children: <Widget>[
                 new Expanded(
                   child: TextField(
+                    controller: emailController,
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
                       border: InputBorder.none,
@@ -344,6 +346,7 @@ class _LoginScreenState extends State<LoginScreen>
               children: <Widget>[
                 new Expanded(
                   child: TextField(
+                    controller: passwordController,
                     obscureText: true,
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
@@ -374,56 +377,64 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
                     textAlign: TextAlign.end,
                   ),
-                  onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => new ForgotPasswordScreen())),
+                  onPressed: () => Navigator.push(
+                      context,
+                      new MaterialPageRoute(
+                          builder: (context) => new ForgotPasswordScreen())),
                 ),
               ),
             ],
           ),
           new Container(
-            width: MediaQuery.of(context).size.width,
-            margin: const EdgeInsets.only(left: 30.0, right: 30.0, top: 20.0),
-            alignment: Alignment.center,
-            child: new Row(
-              children: <Widget>[
-                new Expanded(
-                  child: new FlatButton(
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0),
-                    ),
-                    color: Colors.redAccent,
-                    onPressed: () => {},
-                    child: new Container(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 20.0,
-                        horizontal: 20.0,
+              width: MediaQuery.of(context).size.width,
+              margin: const EdgeInsets.only(left: 30.0, right: 30.0, top: 20.0),
+              alignment: Alignment.center,
+              child: new Row(
+                children: <Widget>[
+                  new Expanded(
+                    child: new FlatButton(
+                      shape: new RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(30.0),
                       ),
-                      child: new Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          new Expanded(
-                            child: Text(
-                              "LOGIN",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                      color: Colors.redAccent,
+                      onPressed: () => authHandler
+                              .handleSignInEmail(
+                                  emailController.text, passwordController.text)
+                              .then((FirebaseUser user) {
+                            print(user); // send user to dashboard screen
+                          }).catchError((e) => print(e)),
+                      child: new Container(
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 20.0,
+                          horizontal: 20.0,
+                        ),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            new Expanded(
+                              child: Text(
+                                "LOGIN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            )
-          )
+                ],
+              ))
         ],
       ),
     ));
   }
 
   Widget SignupPage() {
-    return new Scaffold(body: Container(
+    return new Scaffold(
+        body: Container(
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -615,8 +626,7 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
                     textAlign: TextAlign.end,
                   ),
-                  onPressed: () => gotoLogin()
-                  ,
+                  onPressed: () => gotoLogin(),
                 ),
               ),
             ],
@@ -633,10 +643,13 @@ class _LoginScreenState extends State<LoginScreen>
                       borderRadius: new BorderRadius.circular(30.0),
                     ),
                     color: Colors.redAccent,
-                    onPressed: () => authHandler.handleSignUp(emailController.text, passwordController.text)
-                        .then((FirebaseUser user) {
-                      // send user to dashboard screen
-                    }).catchError((e) => print(e)),
+                    onPressed: () => authHandler
+                            .handleSignUp(
+                                emailController.text, passwordController.text)
+                            .then((FirebaseUser user) {
+                          user.sendEmailVerification();
+                          // send user to dashboard screen
+                        }).catchError((e) => print(e)),
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
                         vertical: 20.0,
@@ -702,5 +715,4 @@ class _LoginScreenState extends State<LoginScreen>
       ),
     );
   }
-
 }
