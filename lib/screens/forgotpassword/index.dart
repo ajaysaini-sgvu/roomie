@@ -16,7 +16,9 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        body: Container(
+        body: Stack(
+      children: <Widget>[
+        Container(
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -26,14 +28,6 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                new Row(
-                  children: <Widget>[
-                    new Expanded(
-                        child: isLoading
-                            ? Center(child: CircularProgressIndicator())
-                            : new Container()),
-                  ],
-                ),
                 new Row(
                   children: <Widget>[
                     new Expanded(
@@ -159,6 +153,16 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   ),
                 ),
               ],
-            )));
+            )),
+        isLoading
+            ? Container(
+                color: Colors.black.withOpacity(0.5),
+                child: Center(
+                  child: CircularProgressIndicator(),
+                ),
+              )
+            : Container()
+      ],
+    ));
   }
 }
