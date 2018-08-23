@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:roomie/auth/Auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:roomie/screens/forgotpassword/index.dart';
+import 'package:roomie/screens/dashboard/index.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -408,6 +409,11 @@ class _LoginScreenState extends State<LoginScreen>
                               .handleSignInEmail(
                                   emailController.text, passwordController.text)
                               .then((FirebaseUser user) {
+                            Navigator.pop(context);
+                            Navigator.push(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) => new DashboardScreen()));
                             setState(() {
                               isLoading = false;
                             });
