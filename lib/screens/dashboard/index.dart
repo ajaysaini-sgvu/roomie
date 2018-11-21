@@ -1,12 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:roomie/screens/widgets/common_scaffold.dart';
+import 'package:roomie/screens/dashboard/listview.dart';
 
 class DashboardScreen extends StatelessWidget {
-  Widget bodyData() => SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: <Widget>[],
+  Widget bodyData() =>
+      DefaultTabController(
+        length: 2,
+        child: new Scaffold(
+          appBar: new TabBar(
+            labelColor: Colors.black,
+            tabs: [
+              Tab(text: 'ALL LISTINGS'),
+              Tab(text: 'FAVORITES',),
+            ],
+          ),
+          body: new TabBarView(
+            children: [
+              new DashboardListView(),
+              new DashboardListView(),
+            ],
+          ),
+          floatingActionButton: new FloatingActionButton(
+              elevation: 0.0,
+              child: new Icon(Icons.add),
+              backgroundColor: Colors.redAccent,
+              onPressed: (){}
           ),
         ),
       );
@@ -14,9 +32,10 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonScaffold(
-      appTitle: "ROOMIE",
+      appTitle: "Roomie",
       showDrawer: true,
       bodyData: bodyData(),
     );
   }
+
 }

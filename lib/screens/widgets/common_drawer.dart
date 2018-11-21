@@ -21,7 +21,7 @@ class CommonDrawer extends StatelessWidget {
           new ListTile(
             title: Text(
               "Bookings",
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
+              style: TextStyle(fontWeight: FontWeight.normal, fontSize: 18.0),
             ),
             leading: Icon(
               Icons.person,
@@ -31,7 +31,7 @@ class CommonDrawer extends StatelessWidget {
           new ListTile(
             title: Text(
               "Create Listing",
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
+              style: TextStyle(fontWeight: FontWeight.normal, fontSize: 18.0),
             ),
             leading: Icon(
               Icons.create_new_folder,
@@ -41,7 +41,7 @@ class CommonDrawer extends StatelessWidget {
           new ListTile(
             title: Text(
               "Profile",
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
+              style: TextStyle(fontWeight: FontWeight.normal, fontSize: 18.0),
             ),
             leading: Icon(
               Icons.person,
@@ -51,7 +51,7 @@ class CommonDrawer extends StatelessWidget {
           new ListTile(
             title: Text(
               "Settings",
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
+              style: TextStyle(fontWeight: FontWeight.normal, fontSize: 18.0),
             ),
             leading: Icon(
               Icons.settings,
@@ -61,7 +61,7 @@ class CommonDrawer extends StatelessWidget {
           new ListTile(
             title: Text(
               "Contact Us",
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
+              style: TextStyle(fontWeight: FontWeight.normal, fontSize: 18.0),
             ),
             leading: Icon(
               Icons.contact_mail,
