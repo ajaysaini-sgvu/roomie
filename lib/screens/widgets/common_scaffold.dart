@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:roomie/screens/widgets/common_drawer.dart';
-import 'package:roomie/screens/widgets/custom_float.dart';
 import 'package:roomie/utils/uidata.dart';
 
 class CommonScaffold extends StatelessWidget {
   final appTitle;
   final Widget bodyData;
-  final showFAB;
   final showDrawer;
   final backGroundColor;
   final actionFirstIcon;
@@ -19,7 +17,6 @@ class CommonScaffold extends StatelessWidget {
   CommonScaffold(
       {this.appTitle,
       this.bodyData,
-      this.showFAB = false,
       this.showDrawer = false,
       this.backGroundColor,
       this.actionFirstIcon = Icons.search,
@@ -47,7 +44,7 @@ class CommonScaffold extends StatelessWidget {
                   onTap: () {},
                   child: Center(
                     child: new Text(
-                      "ADD TO WISHLIST",
+                      "Item1",
                       style: new TextStyle(
                           fontSize: 12.0,
                           fontWeight: FontWeight.bold,
@@ -67,7 +64,7 @@ class CommonScaffold extends StatelessWidget {
                   splashColor: Colors.yellow,
                   child: Center(
                     child: new Text(
-                      "ORDER PAGE",
+                      "Item2",
                       style: new TextStyle(
                           fontSize: 12.0,
                           fontWeight: FontWeight.bold,
@@ -98,18 +95,6 @@ class CommonScaffold extends StatelessWidget {
       ),
       drawer: showDrawer ? CommonDrawer() : null,
       body: bodyData,
-      floatingActionButton: showFAB
-          ? CustomFloat(
-              builder: centerDocked
-                  ? Text(
-                      "5",
-                      style: TextStyle(color: Colors.white, fontSize: 10.0),
-                    )
-                  : null,
-              icon: floatingIcon,
-              qrCallback: () {},
-            )
-          : null,
       floatingActionButtonLocation: centerDocked
           ? FloatingActionButtonLocation.centerDocked
           : FloatingActionButtonLocation.endFloat,

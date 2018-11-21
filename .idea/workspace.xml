@@ -7,24 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c351853b-fc69-40f5-859e-43eb8138015a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/room.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/dashboard/listview.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/roomie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/roomie.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_02.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/dashboard/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/dashboard/index.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/widgets/common_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/widgets/common_drawer.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/widgets/common_scaffold.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/widgets/common_scaffold.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +22,8 @@
       <file leaf-file-name="index.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/screens/dashboard/index.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="75">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -50,35 +34,11 @@
       <file leaf-file-name="common_scaffold.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/screens/widgets/common_scaffold.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="90" column="41" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listview.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/dashboard/listview.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_drawer.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/widgets/common_drawer.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom_float.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/widgets/custom_float.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,13 +108,13 @@
         <option value="$PROJECT_DIR$/lib/screens/widgets/custom_float.dart" />
         <option value="$PROJECT_DIR$/lib/screens/widgets/common_drawer.dart" />
         <option value="$PROJECT_DIR$/lib/Routes.dart" />
-        <option value="$PROJECT_DIR$/lib/screens/widgets/common_scaffold.dart" />
         <option value="$PROJECT_DIR$/android/app/build.gradle" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/screens/dashboard/common_list_item.dart" />
         <option value="$PROJECT_DIR$/lib/screens/login/index.dart" />
         <option value="$PROJECT_DIR$/lib/screens/dashboard/listview.dart" />
         <option value="$PROJECT_DIR$/test/widget_test.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/widgets/common_scaffold.dart" />
         <option value="$PROJECT_DIR$/lib/screens/dashboard/index.dart" />
       </list>
     </option>
@@ -688,38 +648,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screens/widgets/custom_float.dart">
+    <entry file="file://$PROJECT_DIR$/lib/screens/widgets/common_drawer.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="246">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screens/widgets/common_drawer.dart">
+    <entry file="file://$PROJECT_DIR$/lib/screens/widgets/custom_float.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="60">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/dashboard/listview.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="65">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/widgets/common_scaffold.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="90" column="41" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="41" />
+        <state relative-caret-position="102">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/dashboard/index.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="75">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
