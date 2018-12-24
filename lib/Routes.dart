@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:roomie/screens/login/index.dart';
 import 'package:roomie/screens/forgotpassword/index.dart';
+import 'package:roomie/screens/dashboard/index.dart';
 
 class Routes {
   Routes() {
@@ -9,7 +10,8 @@ class Routes {
       home: new LoginScreen(),
       routes: <String, WidgetBuilder>{
         '/login': (BuildContext context) => new LoginScreen(),
-        '/forgotPassword': (BuildContext context) => new ForgotPasswordScreen()
+        '/forgotPassword': (BuildContext context) => new ForgotPasswordScreen(),
+        "/dashboard": (BuildContext context) => new DashboardScreen()
       },
     ));
   }

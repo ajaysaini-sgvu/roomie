@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:roomie/auth/Auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:roomie/screens/forgotpassword/index.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -73,6 +74,7 @@ class _LoginScreenState extends State<LoginScreen>
 
   @override
   void initState() {
+    _checkIsLogin();
     super.initState();
 
     controller_minus1To0 = new AnimationController(
@@ -108,6 +110,15 @@ class _LoginScreenState extends State<LoginScreen>
 //      print(scrollPercent);
       setState(() {});
     });
+  }
+
+  Future<Null> _checkIsLogin() async {
+    final prefs = await SharedPreferences.getInstance();
+    bool loginStatus = prefs.getBool("logged");
+    if(loginStatus) {
+      Navigator.pop(context);
+      Navigator.of(context).pushNamed("/dashboard");
+    }
   }
 
   var authHandler = new Auth();
@@ -407,7 +418,14 @@ class _LoginScreenState extends State<LoginScreen>
                           authHandler
                               .handleSignInEmail(
                                   emailController.text, passwordController.text)
-                              .then((FirebaseUser user) {
+                              .then((FirebaseUser user) async {
+                            Navigator.pop(context);
+                            Navigator.of(context).pushNamed("/dashboard");
+
+                            // obtain shared preferences
+                            final prefs = await SharedPreferences.getInstance();
+                            prefs.setBool("logged", true);
+
                             setState(() {
                               isLoading = false;
                             });
@@ -670,12 +688,19 @@ class _LoginScreenState extends State<LoginScreen>
                         authHandler
                             .handleSignUp(
                                 emailController.text, passwordController.text)
-                            .then((FirebaseUser user) {
+                            .then((FirebaseUser user) async {
                           setState(() {
                             isLoading = false;
                           });
                           user.sendEmailVerification();
+
+                          // obtain shared preferences
+                          final prefs = await SharedPreferences.getInstance();
+                          prefs.setBool("logged", true);
+
                           // send user to dashboard screen
+                          Navigator.pop(context);
+                          Navigator.of(context).pushNamed("/dashboard");
                         }).catchError((e) => print(e));
                       },
                       child: new Container(
