@@ -7,10 +7,11 @@ class Routes {
   Routes() {
     runApp(new MaterialApp(
       title: "Roomie",
-      home: new DashboardScreen(),
+      home: new LoginScreen(),
       routes: <String, WidgetBuilder>{
         '/login': (BuildContext context) => new LoginScreen(),
-        '/forgotPassword': (BuildContext context) => new ForgotPasswordScreen()
+        '/forgotPassword': (BuildContext context) => new ForgotPasswordScreen(),
+        "/dashboard": (BuildContext context) => new DashboardScreen()
       },
     ));
   }
