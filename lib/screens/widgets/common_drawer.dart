@@ -63,6 +63,9 @@ class CommonDrawer extends StatelessWidget {
               Icons.settings,
               color: Colors.cyan,
             ),
+            onTap: () {
+              Navigator.popAndPushNamed(context, "/settings");
+            },
           ),
           new ListTile(
             title: Text(
