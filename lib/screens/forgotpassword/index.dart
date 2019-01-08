@@ -9,13 +9,13 @@ class ForgotPasswordScreen extends StatefulWidget {
 }
 
 class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
-  var emailController = new TextEditingController();
-  var authHandler = new Auth();
+  var emailController = TextEditingController();
+  var authHandler = Auth();
   bool isLoading = false;
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
         body: Stack(
       children: <Widget>[
         Container(
@@ -23,17 +23,17 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             decoration: BoxDecoration(
               color: Colors.white,
             ),
-            child: new Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                new Row(
+                Row(
                   children: <Widget>[
-                    new Expanded(
-                      child: new Padding(
+                    Expanded(
+                      child: Padding(
                         padding: const EdgeInsets.only(left: 40.0),
-                        child: new Text(
+                        child: Text(
                           "EMAIL",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -45,7 +45,7 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     ),
                   ],
                 ),
-                new Container(
+                Container(
                   width: MediaQuery.of(context).size.width,
                   margin:
                       const EdgeInsets.only(left: 40.0, right: 40.0, top: 10.0),
@@ -59,11 +59,11 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     ),
                   ),
                   padding: const EdgeInsets.only(left: 0.0, right: 10.0),
-                  child: new Row(
+                  child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      new Expanded(
+                      Expanded(
                         child: TextField(
                           controller: emailController,
                           textAlign: TextAlign.left,
@@ -80,17 +80,17 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 Divider(
                   height: 24.0,
                 ),
-                new Container(
+                Container(
                   width: MediaQuery.of(context).size.width,
                   margin:
                       const EdgeInsets.only(left: 30.0, right: 30.0, top: 20.0),
                   alignment: Alignment.center,
-                  child: new Row(
+                  child: Row(
                     children: <Widget>[
-                      new Expanded(
-                        child: new FlatButton(
-                          shape: new RoundedRectangleBorder(
-                            borderRadius: new BorderRadius.circular(30.0),
+                      Expanded(
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
                           ),
                           color: Colors.redAccent,
                           onPressed: () {
@@ -105,12 +105,12 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                 builder: (BuildContext context) {
                                   // return object of type Dialog
                                   return AlertDialog(
-                                    content: new Text(
+                                    content: Text(
                                         "Password reset email has been sent."),
                                     actions: <Widget>[
                                       // usually buttons at the bottom of the dialog
-                                      new FlatButton(
-                                        child: new Text("OK"),
+                                      FlatButton(
+                                        child: Text("OK"),
                                         onPressed: () {
                                           Navigator.pop(context);
                                         },
@@ -127,15 +127,15 @@ class ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                               });
                             }).catchError((e) => print(e));
                           },
-                          child: new Container(
+                          child: Container(
                             padding: const EdgeInsets.symmetric(
                               vertical: 20.0,
                               horizontal: 20.0,
                             ),
-                            child: new Row(
+                            child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                new Expanded(
+                                Expanded(
                                   child: Text(
                                     "FORGOT PASSWORD",
                                     textAlign: TextAlign.center,

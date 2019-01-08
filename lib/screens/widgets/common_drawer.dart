@@ -8,16 +8,19 @@ class CommonDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            accountName: Text(
-              "Ajay Saini",
-            ),
-            accountEmail: Text(
-              "ajaysaini.official@gmail.com",
-            ),
-            currentAccountPicture: new CircleAvatar(
-              backgroundImage: new AssetImage("assets/images/avatar.png"),
-            ),
-          ),
+              decoration: BoxDecoration(color: Colors.redAccent),
+              accountName: Text(
+                "Ajay Saini",
+              ),
+              accountEmail: Text(
+                "ajaysaini.official@gmail.com",
+              ),
+              currentAccountPicture: new CircleAvatar(
+                backgroundImage: new AssetImage("assets/images/avatar.png"),
+              ),
+              onDetailsPressed: () {
+                Navigator.popAndPushNamed(context, "/profile");
+              }),
           new ListTile(
             title: Text(
               "Bookings",
@@ -47,6 +50,9 @@ class CommonDrawer extends StatelessWidget {
               Icons.person,
               color: Colors.red,
             ),
+            onTap: () {
+              Navigator.popAndPushNamed(context, "/profile");
+            },
           ),
           new ListTile(
             title: Text(
@@ -67,6 +73,9 @@ class CommonDrawer extends StatelessWidget {
               Icons.contact_mail,
               color: Colors.brown,
             ),
+            onTap: () {
+              Navigator.popAndPushNamed(context, "/contactus");
+            },
           ),
         ],
       ),

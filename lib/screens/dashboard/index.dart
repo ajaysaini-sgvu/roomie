@@ -6,23 +6,23 @@ class DashboardScreen extends StatelessWidget {
   Widget bodyData() =>
       DefaultTabController(
         length: 2,
-        child: new Scaffold(
-          appBar: new TabBar(
+        child:  Scaffold(
+          appBar:  TabBar(
             labelColor: Colors.black,
             tabs: [
               Tab(text: 'ALL LISTINGS'),
               Tab(text: 'FAVORITES',),
             ],
           ),
-          body: new TabBarView(
+          body:  TabBarView(
             children: [
-              new DashboardListView(),
-              new DashboardListView(),
+               DashboardListView(),
+               DashboardListView(),
             ],
           ),
-          floatingActionButton: new FloatingActionButton(
+          floatingActionButton:  FloatingActionButton(
               elevation: 0.0,
-              child: new Icon(Icons.add),
+              child:  Icon(Icons.add),
               backgroundColor: Colors.redAccent,
               onPressed: (){}
           ),
