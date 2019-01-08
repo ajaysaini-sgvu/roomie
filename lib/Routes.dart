@@ -17,7 +17,7 @@ class Routes {
         "/dashboard": (BuildContext context) =>  DashboardScreen(),
         "/profile": (BuildContext context) =>  ProfileScreen(),
         "/contactus": (BuildContext context) => ContactUsScreen(),
-        "settings": (BuildContext context) => SettingScreen()
+        "/settings": (BuildContext context) => SettingsScreen()
       },
     ));
   }
