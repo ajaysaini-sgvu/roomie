@@ -4,6 +4,7 @@ import 'package:roomie/screens/forgotpassword/index.dart';
 import 'package:roomie/screens/login/index.dart';
 import 'package:roomie/screens/profile/index.dart';
 import 'package:roomie/screens/contactus/index.dart';
+import 'package:roomie/screens/settings/index.dart';
 
 class Routes {
   Routes() {
@@ -15,7 +16,8 @@ class Routes {
         '/forgotPassword': (BuildContext context) =>  ForgotPasswordScreen(),
         "/dashboard": (BuildContext context) =>  DashboardScreen(),
         "/profile": (BuildContext context) =>  ProfileScreen(),
-        "/contactus": (BuildContext context) => ContactUsScreen()
+        "/contactus": (BuildContext context) => ContactUsScreen(),
+        "/settings": (BuildContext context) => SettingsScreen()
       },
     ));
   }
