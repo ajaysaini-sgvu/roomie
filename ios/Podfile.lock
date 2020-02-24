@@ -100,7 +100,7 @@ DEPENDENCIES:
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BoringSSL
     - Firebase
     - FirebaseAnalytics
@@ -133,17 +133,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BoringSSL: cf3f1793eb6e3c445c4d150456341f149c268a35
-  cloud_firestore: a2d49d9c7219fce31033eb1a2ee953d7733c91d6
+  cloud_firestore: c575f263eb7033afb7d407e6264b21d6e622a061
   Firebase: 25ed0412036d7d008568d1fb4d2e9d81ea8a0a2c
-  firebase_auth: 27a5a77a032d557c18f8e223aaf8ec1368f6cdbc
-  firebase_core: c96aa8b2fcf7f5167d32f22034f502f9304952b8
+  firebase_auth: 6023fc2e28feabd6571d9a105b678cce7978be90
+  firebase_core: ce5006bb48508ee4e71e0f429a3f519bb8ee2961
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseAuth: 463b8ce33bd5d05f706dcd4615499e3212b4132b
   FirebaseCore: a3c87242451633fff8490183898075ce77d168d2
   FirebaseDatabase: 482bad9c2abd422bb2321194fb8c937e67426a89
   FirebaseFirestore: 04074ef839843569387df819d42c834c792ef215
   FirebaseInstanceID: 05d779cbb97bd5bd5c51a38a903fc9cfe1b2454a
-  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   gRPC: 9362451032695e2dfb7bafcd3740e3a27939e4ff
   gRPC-Core: 9696b220565b283e021cf2722d473a4a74b7622a
@@ -153,8 +153,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
-  shared_preferences: 5a1d487c427ee18fcd3ea1f2a131569481834b53
+  shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
 
 PODFILE CHECKSUM: 7765ea4305eaab0b3dfd384c7de11902aa3195fd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
